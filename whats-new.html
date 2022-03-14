@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="/media/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script type='text/javascript'>
+        $(window).load(function () {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <title>Nyheter</title>
+</head>
+
+<body>
+    <nav class="navbar-2" id="myTopnav">
+        <a href="index.html" class="box-1-navbar-2">SKULLERUD SUSHI</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
+            <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
+        </a>
+    </nav>
+    <nav class="navbar-1" id="myLinks">
+        <div class="box-A1"><a href="menu.html">MENY</a></div>
+        <div class="box-A2"><a href="order.html">BESTILL</a></div>
+        <div class="box-A3"><a href="index.html">HJEM</a></div>
+        <div class="box-A4"><a class="active" href="whats-new.html">NYHETER</a></div>
+        <div class="box-A5"><a href="about-us.html">OM OSS</a></div>
+    </nav>
+    <main class="container-2" style="margin-bottom:-20px;">
+        <div class="box-B1">
+            <img src="media/123rf/95752887_xl-reduced.png" style="width:100%; height:100%;">
+        </div>
+        <div class="box-B2">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fm.facebook.com%2FSkullerud-Sushi-og-Asiatisk-mat-728422817215940%2F%3Ftsid%3D0.5842314931819794%26source%3Dresult&tabs=timeline&width=380&height=700&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=340271256423687"
+                width="380" height="700" style="border:none;overflow:hidden; padding-top:15px;" scrolling="no"
+                frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="box-B3">
+            <img src="media/123rf/120627540_l-reduced.png" style="width:100%; height:100%;">
+        </div>
+    </main>
+    <main class="container-3">
+        <div class="box-C1">
+            <img src="media/123rf/14877785_l-reduced.jpeg" style="width:100%; height:100%; margin-top:15px;">
+        </div>
+    </main>
+    <footer class="container-footer">
+        <div class="footer-1">
+            <h2>SKULLERUD SUSHI</h2>
+            <p>Telefon: +47 993 87 966</p>
+            <p>Adresse: Olaf Helsets vei 1, 0694 Oslo</p>
+            <p>Besøk oss på <a
+                    href="https://www.facebook.com/Skullerud-Sushi-og-Asiatisk-mat-728422817215940">Facebook</a></p>
+        </div>
+        <div class="footer-2">
+            <h2>ÅPNINGSTIDER</h2>
+            <p>Søndag - Torsdag: 12:00 - 21:00</p>
+            <p>Fredag - Lørdag: 12:00 - 22:00</p>
+            <p>Kjøkkenet stenger 15 min før stengetid</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>COPYRIGHT © 2022 SKULLERUD SUSHI AS</p>
+        <p style="color:gray">Utviklet og designet av Magnus Heide</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+            var a = document.getElementById("activate-menu");
+            var d = document.getElementById("deactivate-menu");
+            if (a.style.display === "block") {
+                a.style.display = "none";
+                d.style.display = "block";
+            } else {
+                d.style.display = "none";
+                a.style.display = "block";
+            }
+        }
+    </script>
+</body>
+<div class="se-pre-con"></div>
+
+</html>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="/media/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script type='text/javascript'>
+        $(window).load(function () {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <title>Meny</title>
+</head>
+
+<body>
+    <nav class="navbar-2" id="myTopnav">
+        <a href="index.html" class="box-1-navbar-2">SKULLERUD SUSHI</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars white-color" style="float:right; display:block;" id="activate-menu"></i>
+            <i class="fa fa-remove white-color" style="float:right; display:none;" id="deactivate-menu"></i>
+        </a>
+    </nav>
+    <nav class="navbar-1" id="myLinks" style="margin-bottom: 5px;">
+        <div class="box-A1"><a class="active" href="menu.html">MENY</a></div>
+        <div class="box-A2"><a href="order.html">BESTILL</a></div>
+        <div class="box-A3"><a href="index.html">HJEM</a></div>
+        <div class="box-A4"><a href="whats-new.html">NYHETER</a></div>
+        <div class="box-A5"><a href="about-us.html">OM OSS</a></div>
+    </nav>
+
+    <main>
+        <div class="menu-container">
+            <nav class="menu-navbar-pc">
+                <div class="menunavbarpc">
+                    <h1 class="main-h1" class="link">MENY</h1>
+                </div>
+                <div class="menunavbarpc"><a href="#forretter" class="link">FORRETTER</a></div>
+                <div class="menunavbarpc"><a href="#varmretter" class="link">VARMRETTER</a></div>
+                <div class="menunavbarpc"><a href="#sushi" class="link">SUSHI</a></div>
+                <div class="menunavbarpc"><a href="#drikke" class="link">DRIKKE</a></div>
+                <div class="menunavbarpc"><button id="idbtn" class="btn">BESTILL NÅ</button></div>
+            </nav>
+            <nav class="menu-navbar-mobile">
+                <div>
+                    <h1 class="main-h1">MENY</h1>
+                </div>
+                <select id="menu-navbar-mobile-select" onchange="location = this.value;">
+                    <option value="menu.html">NAVIGER MENYEN</option>
+                    <option value="#forretter">Forretter</option>
+                    <option value="#varmretter">Varmretter</option>
+                    <option value="#sushimeny">Sushimeny</option>
+                    <option value="#sashimi">Sashimi</option>
+                    <option value="#maki8">Maki - 8 biter</option>
+                    <option value="#maki12">Maki - 12 biter</option>
+                    <option value="#nigiri">Nigiri</option>
+                    <option value="#dessert">Dessert</option>
+                    <option value="#drikke">Drikke</option>
+                    <option value="#ovrig">Øvrig</option>
+                </select>
+                <div class="box-A1"><button id="idbtn3" class="btn">BESTILL NÅ</button></div>
+
+            </nav>
+            <div class="navbar-allergies">
+                <div class="flex1">
+                    <div>
+                        <h3>Allergener</h3>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div>
+                        <p>S = Soya 🌱</p>
+                    </div>
+                    <div>
+                        <p>G = Gluten 🌾</p>
+                    </div>
+                    <div>
+                        <p>SK = Skalldyr 🦐</p>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div>
+                        <p>E = Egg 🥚</p>
+                    </div>
+                    <div>
+                        <p>M = Melk 🥛</p>
+                    </div>
+                    <div>
+                        <p>P = Peanøtter 🥜</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="menu">
+                <h2 class="menu-group-heading" id="forretter">
+                    Forretter 🍤
+                </h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/no-image.JPG" alt="Misosuppe" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">1. Misosuppe</span>
+                                <span class="menu-item-price">45 / 50</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Sjøgress, tofu, crabsticks</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/vaarruller-vegetar.png" alt="Vårruller (2 stk)"
+                            class="menu-item-image" style="transform: rotate(180deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">2. Vårruller m/kylling (2 stk)</span>
+                                <span class="menu-item-price">60 / 65</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Mungbønner, purreløk, gulrot, hodekål</p>
+                            <p class="menu-item-allergies">Allergener: G</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/vaarruller-vegetar.png" alt="Vegetar vårruller (2 stk)"
+                            class="menu-item-image" style="transform: rotate(180deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">3. Vegetar vårruller (2 stk)</span>
+                                <span class="menu-item-price">60 / 65</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Mungbønner, purreløk, gulrot, hodekål</p>
+                            <p class="menu-item-allergies">Allergener: G</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/ferske-vaarruller.png" alt="Ferske vårruller"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">4. Ferske vårruller</span>
+                                <span class="menu-item-price">70 / 75</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Reker, egg, salat, risnudler, kokosmelk,
+                                hoisinsaus</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, M</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/wotonsuppe.png" alt="Wotonsuppe" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">5. Wotonsuppe</span>
+                                <span class="menu-item-price">70 / 75</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Kyllingkjøttdeig, wontonblader, sprøstekt løk
+                            </p>
+                            <p class="menu-item-allergies">Allergener: G</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/innbakt.png" alt="Innbakt scampi eller kylling (3 stk)"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">6. Innbakt (3 stk)</span>
+                                <span class="menu-item-price">70 / 75</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, scampi</p>
+                            <p class="menu-item-description">Serveres med sursøt saus</p>
+                            <p class="menu-item-allergies">Allergener: G, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/tomyamkung-suppe.png" alt="Tom Yam Kung suppe"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">7. Tom Yam Kung suppe</span>
+                                <span class="menu-item-price">70 / 75</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Scampi, kokosmelk, sopp, limeblader</p>
+                            <p class="menu-item-allergies">Allergener: SK, M</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/forretter/tomyamkung-suppe.png" alt="Tom Kai Kai suppe"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">8. Tom Kai Kai suppe</span>
+                                <span class="menu-item-price">70 / 75</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Kylling, kokosmelk, sopp, limeblader</p>
+                            <p class="menu-item-allergies">Allergener: SK, M</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-group-heading" id="varmretter">
+                    Varmretter 🍲
+                </h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/and.png" alt="Vårruller" class="menu-item-image"
+                            style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">9. Stekt and</span>
+                                <span class="menu-item-price">169 / 179</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Fritert andefilet, hvitløk, grønnsaker,
+                                sesamolje, hjemmelaget pekingsaus</p>
+                            <p class="menu-item-allergies">Allergener: S, G, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/stekte-nudler-med-biff.png" alt="Stekte nudler"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">10. Stekte nudler</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Eggnudler, blomkål, brokkoli, paprika, gulrot,
+                                oystersaus</p>
+                            <p class="menu-item-allergies">Allergener: SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/stekt-ris.png" alt="Stekt ris" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">11. Stekt ris</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Ris, egg, mais, erter, gulrot</p>
+                            <p class="menu-item-allergies">Allergener: SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/chop-suey.png" alt="Chopsuey m/ris" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">12. Chopsuey m/ris</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff</p>
+                            <p class="menu-item-description">Inneholder: Ris, oystersaus, blomkål, brokkoli, paprika,
+                                gulrot</p>
+                            <p class="menu-item-allergies">Allergener: S</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/padthai.png" alt="Padthai" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">13. Padthai</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Nudler, egg, grønnsaker, bønnespirer,
+                                peanøtter, tamarindsaus</p>
+                            <p class="menu-item-allergies">Allergener: SK, E, P</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/gronn-karri.png" alt="Grønn karri m/ris"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">14. Grønn karri m/ris</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Grønn karrisaus, kokosmelk, thailandske
+                                grønnsaker</p>
+                            <p class="menu-item-allergies">Allergener: SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/rod-karri.png" alt="Rød karri m/ris (sterk)"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">14a. Rød karri m/ris (sterk)</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Rød karrisaus, kokosmelk, thailandske
+                                grønnsaker</p>
+                            <p class="menu-item-allergies">Allergener: SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/sot-karri-m-ris.png" alt="Søt karri m/ris"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">14b. Søt karri m/ris</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, biff, scampi</p>
+                            <p class="menu-item-description">Inneholder: Søt karrisaus, kokosmelk, ananas, thailandske
+                                grønnsaker</p>
+                            <p class="menu-item-allergies">Allergener: SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/varmretter/innbakt-m-ris.png" alt="Innbakt m/ris"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">14c. Innbakt m/ris</span>
+                                <span class="menu-item-price">159 / 169</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Innbakt kylling eller scampi</p>
+                            <p class="menu-item-description">Inneholder: Grønnsaker og sursøt saus</p>
+                            <p class="menu-item-allergies">Allergener: G, SK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-group-heading" id="sushi">
+                    Sushi 🍱
+                </h2>
+                <h3 class="subheading" id="sushimeny">SUSHIMENY</h3>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/dagens-sushi.png" alt="Dagens sushi (12 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">15. Dagens sushi (12 biter)</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">8 laks maki, 2 laks, 1 scampi, 1 tilapia</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/liten-sushi.png" alt="Liten sushi (8 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">16. Liten sushi (8 biter)</span>
+                                <span class="menu-item-price">90 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">4 laks maki, 2 laks, 1 scampi, 1 tilapia</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/medium-sushi.png" alt="Medium sushi (11 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">17. Medium sushi (11 biter)</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">4 laks, 4 laks maki, 1 tilapia, 1 tuna, 1 scampi</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/stor-sushi.png" alt="Stor sushi (18 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">18. Stor sushi (18 biter)</span>
+                                <span class="menu-item-price">209 / 219</span>
+                            </h3>
+                            <p class="menu-item-description">8 laks maki, 6 laks, 1 tilapia, 1 tuna, 1 scampi, 1 kokt
+                                kamskjell</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/super-sushi.png" alt="Supersushi (22 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">19. Supersushi (22 biter)</span>
+                                <span class="menu-item-price">259 / 269</span>
+                            </h3>
+                            <p class="menu-item-description">9 laks, 8 laks maki, 2 tilapia, 1 tuna, 1 scampi, 1 kokt
+                                kamskjell</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/skullerud-spesial.png" alt="Skullerud spesial (34 biter)"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">20. Skullerud spesial (34 biter)</span>
+                                <span class="menu-item-price">399 / 419</span>
+                            </h3>
+                            <p class="menu-item-description">10 laks, 8 laks maki, 8 tempura maki m/scampi, 2 tilapia, 2
+                                tuna, 2 scampi, 2 kokt kamskjell</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sushimeny/familiesushi.png" alt="Familiesushi (50 biter)"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">20a. Familiesushi (50 biter)</span>
+                                <span class="menu-item-price">590 / 610</span>
+                            </h3>
+                            <p class="menu-item-description">14 laks, 12 laks maki, 12 tempura maki m/scampi, 3 tilapia,
+                                3 tuna, 3 scampi, 3 kokt kamskjell</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subheading" id="sashimi">SASHIMI</h3>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/no-image.JPG" alt="Liten sashimi (9 biter)" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">21. Liten sashimi (9 biter)</span>
+                                <span class="menu-item-price">129 / 139</span>
+                            </h3>
+                            <p class="menu-item-description">5 laks, 1 tilapia, 1 tuna, 1 kokt kamskjell, 1 lakserogn.
+                                Serveres med ris og salat.</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/sashimi/sashimi-16-biter.png" alt="Stor sashimi (16 biter)"
+                            class="menu-item-image" style="transform: rotate(3deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">22. Stor sashimi (16 biter)</span>
+                                <span class="menu-item-price">209 / 219</span>
+                            </h3>
+                            <p class="menu-item-description">8 laks, 2 tilapia, 2 tuna, 2 scampi, 1 kokt kamskjell, 1
+                                lakserogn. Serveres med ris og salat.</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/no-image.JPG" alt="Familiesashimi (25 biter)" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">23. Familiesashimi (25 biter)</span>
+                                <span class="menu-item-price">319 / 329</span>
+                            </h3>
+                            <p class="menu-item-description">12 laks, 3 tilapia, 3 tuna, 3 scampi, 3 kokt kamskjell, 1
+                                lakserogn. Serveres med ris og salat.</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subheading" id="maki8">MAKI - 8 BITER</h3>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/california-maki-8-biter.png" alt="California maki"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">24. California maki</span>
+                                <span class="menu-item-price">79 / 89</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Crabsticks, avokado, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/kappa-maki-8-biter.png" alt="Kappa maki (vegetar)"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">25. Kappa maki (vegetar)</span>
+                                <span class="menu-item-price">79 / 89</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Avokado eller agurk</p>
+                            <p class="menu-item-allergies">Allergener: S</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/laks-maki-8-biter.png" alt="Laks maki"
+                            class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">26. Laks maki</span>
+                                <span class="menu-item-price">79 / 89</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Laks, avokado</p>
+                            <p class="menu-item-allergies">Allergener: S</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/laks-maki-philadelphia-8-biter.png"
+                            alt="Laks maki m/philadelphia eller chilimajones" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">26a. Laks maki+</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Laks, avokado, philadelphia/chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/tuna-maki.png" alt="Tuna maki" class="menu-item-image"
+                            style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">27. Tuna maki</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Tunfisk, kimchi, chllimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/no-image.JPG" alt="Kamskjell maki" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">28. Kamskjell maki</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Kokt kamskjell, kimchi, chllimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/tempura-maki-scampi-8-biter.png" alt="Tempura maki"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">29. Tempura maki</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-variant">Varianter: Kylling, scampi, laks</p>
+                            <p class="menu-item-description">Inneholder: Avokado, chllimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/kokt-scampi.png" alt="Kokt scampi"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">30. Kokt scampi</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Avokado</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/rodskjell-maki.png" alt="Rødskjell maki"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">31. Rødskjell maki</span>
+                                <span class="menu-item-price">79 / 89</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Rødskjell, agurk eller kimchi, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/tempura-softskjell.png" alt="Tempura softskjell"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">32. Tempura softskjell</span>
+                                <span class="menu-item-price">99 / 109</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Innbakt softskjell, kimchi, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, SK, E (chilimajones)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-8-biter/special-maki.png" alt="Special maki"
+                            class="menu-item-image" style="transform: rotate(90deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">33. Special maki</span>
+                                <span class="menu-item-price">99 / 109</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Laks, scampi, lakserogn</p>
+                            <p class="menu-item-allergies">Allergener: S, SK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subheading" id="maki12">FUTO MAKI - 12 BITER</h3>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-12-biter/tempura-maki-scampi-12-biter.png" alt="Husets maki"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">34. Husets maki</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Innbakt scampi, avokado, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, G, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-12-biter/tempura-maki-scampi-12-biter.png" alt="Kylling maki"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">35. Kylling maki</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Innbakt kylling, avokado, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, G, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-12-biter/tempura-maki-scampi-12-biter.png"
+                            alt="Laks tempura maki" class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">36. Laks tempura maki</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Innbakt laks, avokado, kimchi, chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, G, SK, E</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/maki-12-biter/tempura-maki-scampi-12-biter.png" alt="Futo mix maki"
+                            class="menu-item-image" style="transform: rotate(270deg);">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">37. Futo mix maki</span>
+                                <span class="menu-item-price">149 / 159</span>
+                            </h3>
+                            <p class="menu-item-description">Inneholder: Innbakt scampi, laks, avokado, kimchi,
+                                chilimajones</p>
+                            <p class="menu-item-allergies">Allergener: S, G, SK, E</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subheading" id="nigiri">NIGIRI</h3>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/nigiri/laks-nigiri.png" alt="Nigiri" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Nigiri (per stk)</span>
+                                <span class="menu-item-price">18 / 20</span>
+                            </h3>
+                            <p class="menu-item-description">Laks, crabstick, avokado</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/nigiri/tuna-nigiri.png" alt="Nigiri" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Nigiri (per stk)</span>
+                                <span class="menu-item-price">22 / 24</span>
+                            </h3>
+                            <p class="menu-item-description">Scampi, tuna, kokt kamskjell, tilapia, ål</p>
+                            <p class="menu-item-allergies">Allergener: SK</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/sushi/nigiri/lakserogn.png" alt="Lakserogn" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Lakserogn</span>
+                                <span class="menu-item-price">23</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="menu-group-heading" id="dessert">
+                    Dessert 🍨
+                </h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/no-image.JPG" alt="Eplekake" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">38. Eplekake</span>
+                                <span class="menu-item-price">60</span>
+                            </h3>
+                            <p class="menu-item-description">Med kuleis (vanilje) og peanøtter</p>
+                            <p class="menu-item-allergies">Allergener: G, M, P</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/dessert/innbakt-banan.png" alt="Innbakt banan" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">39. Innbakt banan</span>
+                                <span class="menu-item-price">60</span>
+                            </h3>
+                            <p class="menu-item-description">Med kuleis (vanilje) og peanøtter</p>
+                            <p class="menu-item-allergies">Allergener: G, M, P</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/dessert/ice-cream.png" alt="Sushi 8 biter" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">40. To kuler is</span>
+                                <span class="menu-item-price">40</span>
+                            </h3>
+                            <p class="menu-item-description">Varianter: Vanilje, jordbær</p>
+                            <p class="menu-item-allergies">Allergener: M</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-group-heading" id="drikke">
+                    Drikke 🥤
+                </h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/drikke/brus.png" alt="Brus" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Brus</span>
+                                <span class="menu-item-price">30 / 35 / 50</span>
+                            </h3>
+                            <p class="menu-item-description">Brus 0.33 L for kr 30.</p>
+                            <p class="menu-item-description">Brus 0.5 L og energidrikke for kr 35.</p>
+                            <p class="menu-item-description">Brus 1.5 L for kr 50.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/drikke/imsdal.png" alt="Mineralvann" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Mineralvann</span>
+                                <span class="menu-item-price">30</span>
+                            </h3>
+                            <p class="menu-item-description">Mineralvann, capri sonne (stor)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/drikke/solrik.png" alt="Barnedrikke" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Barnedrikke</span>
+                                <span class="menu-item-price">20</span>
+                            </h3>
+                            <p class="menu-item-description">Solrik, capri sonne (liten)</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/drikke/kaffe.png" alt="Te/kaffe" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Te, kaffe</span>
+                                <span class="menu-item-price">30</span>
+                            </h3>
+                            <p class="menu-item-description"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-group-heading" id="ovrig">
+                    Øvrig
+                </h2>
+                <div class="menu-group">
+                    <div class="menu-item">
+                        <img src="./media/menu/ovrig/barnemeny.png" alt="Barnemeny" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Barnemeny</span>
+                                <span class="menu-item-price">89 / 99</span>
+                            </h3>
+                            <p class="menu-item-description">Innbakt kylling, scampi eller laks m/pommes frites eller
+                                ris</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/ovrig/rekechips.png" alt="Tilbehør" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Tilbehør</span>
+                                <span class="menu-item-price">30</span>
+                            </h3>
+                            <p class="menu-item-description">Rekechips, ekstra ris, ingefær, kimchi, salatsjøtang,
+                                sursøt chilisaus</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./media/menu/ovrig/ponzu.png" alt="Ekstra saus" class="menu-item-image">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Ekstra saus</span>
+                                <span class="menu-item-price">20</span>
+                            </h3>
+                            <p class="menu-item-description">Chilimajones, soyasaus, ponzu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="iconify"
+                data-icon="typcn:arrow-up-thick"></span></button>
+    </main>
+    <main class="container">
+        <button id="idbtn2" class="btn" style="margin: 20px;">BESTILL NÅ</button>
+        <footer class="container-footer">
+            <div class="footer-1">
+                <h2>SKULLERUD SUSHI</h2>
+                <p>Telefon: +47 993 87 966</p>
+                <p>Adresse: Olaf Helsets vei 1, 0694 Oslo</p>
+                <p>Besøk oss på <a
+                        href="https://www.facebook.com/Skullerud-Sushi-og-Asiatisk-mat-728422817215940">Facebook</a></p>
+            </div>
+            <div class="footer-2">
+                <h2>ÅPNINGSTIDER</h2>
+                <p>Søndag - Torsdag: 12:00 - 21:00</p>
+                <p>Fredag - Lørdag: 12:00 - 22:00</p>
+                <p>Kjøkkenet stenger 15 min før stengetid</p>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>COPYRIGHT © 2022 SKULLERUD SUSHI AS</p>
+            <p style="color:gray">Utviklet og designet av Magnus Heide</p>
+        </div>
+    </main>
+
+    <script>
+        function zoomin() {
+            var myImg = document.getElementById("map");
+            var currWidth = myImg.clientWidth;
+
+            myImg.style.width = (currWidth + 100) + "px";
+        }
+        function zoomout() {
+            var myImg = document.getElementById("map");
+            var currWidth = myImg.clientWidth;
+            if (currWidth == 100) return false;
+            else {
+                myImg.style.width = (currWidth - 100) + "px";
+            }
+        }
+
+        var btn = document.getElementById("idbtn");
+        var btn2 = document.getElementById("idbtn2");
+        var btn3 = document.getElementById("idbtn3");
+
+        btn.addEventListener("click", runFunc);
+        btn2.addEventListener("click", runFunc);
+        btn3.addEventListener("click", runFunc);
+
+        function runFunc() {
+            window.location.href = "order.html";
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+            var a = document.getElementById("activate-menu");
+            var d = document.getElementById("deactivate-menu");
+            if (a.style.display === "block") {
+                a.style.display = "none";
+                d.style.display = "block";
+            } else {
+                d.style.display = "none";
+                a.style.display = "block";
+            }
+        }
+
+    </script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+<div class="se-pre-con"></div>
+
+</html>
