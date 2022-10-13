@@ -199,10 +199,12 @@ html, body {
 
 .flex2>div {
     width: 32%;
+    padding-top: 5px;
 }
 
 .flex3>div {
     width: 32%;
+    padding-top: 5px;
 }
 
 .navbar-1 a {
